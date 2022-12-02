@@ -1,0 +1,59 @@
+#!/bin/bash
+
+#$1 is the name of the file
+
+# check that the number of arguments is 1 (Step 1)
+
+# check that the file exists (Step 1)
+
+if test -f $1; 
+then
+echo "The file exists"
+else 
+echo "Error the file does not exist"
+exit 1
+fi
+
+# extract all of the Reader Messages (R) (Step 1)
+
+echo "Extrating Reader Messages"
+
+grep '^.\[[0-1];3[0-5]mR' $1 > $1.Reader
+
+# add time range to end of file. (Step 3)
+
+readerHead=$(head -n 1 $1.Reader | cut -b 11-27 | cut --complement -b 11)
+readerTail=$(tail -n 1 $1.Reader | cut -b 11-27 | cut --complement -b 11)
+
+printf "Reader Time Span: %.1f\n" $(($readerTail-$readerHead))e-6 >> $1.Reader
+
+# extract all of the Printer Messages (P)  (Step 1)
+
+echo "Extrating Summary Printer Messages"
+
+grep '^.\[[0-1];3[0-5]mP' $1 > $1.Printer
+
+# add time range to end of file. (Step 3)
+
+printerHead=$(head -n 1 $1.Printer | cut -b 11-27 | cut --complement -b 11)
+printerTail=$(tail -n 1 $1.Printer | cut -b 11-27 | cut --complement -b 11)
+
+printf "Printer Time Span: %.1f\n" $(($printerTail-$printerHead))e-6 >> $1.Printer
+
+#find the number of machines (Step 2)
+
+machines=$(grep '^.\[[0-1];3[0-5]m[0-5]' $1 | cut -b 8 | sort -u)
+
+# extract each machine messages (Step 2)
+
+for i in $machines ; do
+    echo "extracting machine $i messages"
+    grep '^.\[[0-1];3[0-5]m'*$i  $1 > $1.$i
+
+    machineHead=$(head -n 1 $1.$i | cut -b 11-27 | cut --complement -b 11)
+    machineTail=$(tail -n 1 $1.$i | cut -b 11-27 | cut --complement -b 11)
+
+    printf "Time Span: %.1f\n" $(($machineTail-$machineHead))e-6 >> $1.$i
+done
+echo "The machine messages have been extracted"
+

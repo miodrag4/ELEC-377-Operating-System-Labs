@@ -1,0 +1,15 @@
+//Lab4 Testing Documentation
+//Kieran Cosgrove, Mile Stosic
+
+The tests for analyzing the logs of multiple machines consisted of writing shell scripts that split the traces generated from lab 2. The two trace files that were used for the testing are Lab2_3mons.out, and lab2_4mons.out. Running the script with those files produced a variety of output files where the desired outputs were seen. The outputs were verified by analyzing the outputs and checking if the correct lines were being printed and the specific sections were being cut properly. Each output file corresponds to a reader, printer, or monitor thread. The output saved to each created file was then analyzed. To test the code the command ./logsplit "file_Name" was used to execute the code to produce the outputs. Several echo commands were put in place to indicate that files were executable and that extraction completed successfully.
+
+Example Code from Bash terminal:
+
+20mcs@elec377-Tues-40:~/elec377-Tues-40/lab4$ ./logsplit lab2_3mons.out
+The file exists
+Extrating Reader Messages
+Extrating Summary Printer Messages
+extracting machine 0 messages
+extracting machine 1 messages
+extracting machine 2 messages
+The machine messages have been extracted
