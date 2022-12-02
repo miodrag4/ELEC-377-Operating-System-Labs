@@ -1,0 +1,17 @@
+//ELEC 377 Lab 3 Documentation
+//Kieran Cosgrove, Mile Stosic
+
+//Problem Statement and Objectives
+The objective of Lab 3 was to incorporate C function pointers and practice using lower level C memory representation. Furthermore, the Lab 3 required the use of Linux system calls to retrieve system information and start a process.
+
+//Layout of the Code and How it Works
+To implement the objectives of the lab, a shell was written to implement built-in commands and run external programs and a restricted seat of library routines were used to develop a further understanding of the memory model underlying programming low level operating systems services and modules. 
+
+Inputs were separated into words in the commandBuffer array. There is a second array called args that is an array of character pointers that will point to each of the words in the commandBuffer array. The splitCommandLine function is responsible for this separation and takes arguments from the two arrays and the maximum number of args. The index after each word is set to null to indicate a words termination.
+
+
+The next function that was implemented was the skipChar function. Its purpose is to skip the character given by its second parameter. If the skipped character is null, it returns the pointer it was given unchanged. splitCommandLine calls skipChar as well as the library function strchr and fprintf. The function fprintf takes a  predefined stderr file as the first parameter. Note, that for our particular code, we chose to use a while loop to iterate through instead of using strchr because the former was causing errors due to its properties.
+
+The second stage of the lab is to implement the internal commands: exit, pwd, ls, and cd. This is done using the function doInternal with the argument array and number of args. A prototype was added to help implement the exit command before the dispatch table and definition of the function is added to the bottom of the file. Similarly, getcwd library is used for pwd command and ls and cd take optional arguments. The cd commands uses a pointer to the password file enter of a user using the function getpwuid; if null return an error. For ls command, the scandir function is used to list the contents of a directory and uses pointers to a directory entity called dirent to store an array of pointers to dirents in the pointer.
+
+The main program’s code that checks the number of arguments is greater than zero and then calls doInternalCommand to call doProgram if zero was changed. If value returned by doProgram is zero, then it prints an error message. Within the doProgram, the strlen function is used to find length of the current element of earth and the length of the first element of the args array and then uses malloc to allocate enough space for the path, a ‘/‘ character and the command. Sprintf is used to fill the string.
