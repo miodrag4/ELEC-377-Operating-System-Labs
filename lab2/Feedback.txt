@@ -1,0 +1,11 @@
+Documentation 3/3
+
+
+Correctness 2/3
+-missing summary table in code, not sure what happened there
+
+Style 2/2
+
+
+Testing 2/2
+-you can save the output of a command using the redirect operator (>) see Lab0 for more details

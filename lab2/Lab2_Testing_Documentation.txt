@@ -1,0 +1,5 @@
+//Testing Documentation
+The process of testing the code consisted of checking the timeouts from the logs the monitor function prints out as it is read and the function is called. The code was ran in Visual Studios using the command ./lab2main 3 1500. This was to include 3 monitor machines and the printer delay to be 1500 milliseconds. The outputted data to the terminal was confirmed to accumulate and update each time the function was called. Moreover, uptimes and last updated time change. If a machines values were not updated, they still ran. Therefore, output is correct because the last update times remained constant but the uptimes increased. The loop is confirmed to work because it is visible which semaphore are locked, released and obtained. Furthermore, the sum totals are accumulated as programming is executed. Finally, with marginal deviation the printer delay time of 1500 is correct as the timeouts corresponded accordingly.   
+
+
+

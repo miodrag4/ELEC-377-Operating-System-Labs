@@ -1,0 +1,252 @@
+// We copied and pasted are output from the terminal becuase we were not sure how to send it to this file.
+
+20mcs@elec377-Tues-40:~/elec377-Tues-40/lab2$ ./lab2main 3 1500
+
+M [1666051590.980108] Monitor threads 3
+M [1666051590.980824] Printer delay (msec) 1500
+P [1666051590.981860] Printer Thread: delay 1500
+R [1666051590.983159] Readeer Thread: 3 machines
+2 [1666051590.984016] thread 2, file name is machine_2.txt
+2 [1666051590.984870] Machine 2 started
+2 [1666051590.985799] Machine 2 Line 0: 0,0,0.000000,0,0
+2 [1666051590.986217] Machine State: 0
+= [1666051590.987119] Machine State 0x0p+0
+
+] [1666051590.988704] Number of Processes 0
+
+� [1666051590.989486] Load Factor 
+
+� [1666051590.989800] Packets per Second 0
+
+� [1666051590.990533] Discards per Second 0
+
+2 [1666051590.990831] Sleeping for 1240 msec
+1 [1666051590.990992] thread 1, file name is machine_1.txt
+1 [1666051590.991203] Machine 1 started
+1 [1666051590.991375] Machine 1 Line 0: 1,9,0.900000,11,19
+1 [1666051590.991532] Machine State: 1
+= [1666051590.991667] Machine State 0x0p+0
+
+] [1666051590.991991] Number of Processes 0
+
+� [1666051590.992225] Load Factor 
+
+� [1666051590.992240] Packets per Second 0
+
+� [1666051590.992255] Discards per Second 0
+
+1 [1666051590.992270] Sleeping for 1020 msec
+0 [1666051590.993278] thread 0, file name is machine_0.txt
+0 [1666051590.993607] Machine 0 started
+0 [1666051590.994387] Machine 0 Line 0: 1,4,0.500000,16,9
+0 [1666051590.994632] Machine State: 1
+= [1666051590.994784] Machine State 0x0p+0
+
+] [1666051590.995072] Number of Processes 4
+
+� [1666051590.995089] Load Factor 
+
+� [1666051590.995103] Packets per Second 16
+
+� [1666051590.995118] Discards per Second 9
+
+0 [1666051590.995133] Sleeping for 900 msec
+0 [1666051591.895495] Machine 0 Line 1: 1,3,0.200000,5,19
+0 [1666051591.895559] Machine State: 1
+= [1666051591.895580] Machine State 0x0p+0
+
+] [1666051591.895619] Number of Processes 3
+
+� [1666051591.895655] Load Factor 
+
+� [1666051591.895691] Packets per Second 5
+
+� [1666051591.895727] Discards per Second 19
+
+0 [1666051591.895763] Sleeping for 8000 msec
+R [1666051591.984148] Readeer Thread loop start
+R [1666051591.984201] Readeer Thread loop accessing_stats lock aquired
+R [1666051591.984222] The Reader Thread has been accessed
+R [1666051591.984242] Readeer Thread loop  accessing_stats lock released
+1 [1666051592.012526] Machine 1 Line 1: 1,1,0.100000,42,14
+1 [1666051592.012549] Machine State: 1
+= [1666051592.012557] Machine State 0x0p+0
+
+] [1666051592.012573] Number of Processes 3
+
+� [1666051592.012589] Load Factor 
+
+� [1666051592.012603] Packets per Second 5
+
+� [1666051592.012617] Discards per Second 19
+
+1 [1666051592.012632] Sleeping for 8000 msec
+2 [1666051592.231072] Machine 2 Line 1: 1,10,0.200000,39,17
+2 [1666051592.231702] Machine State: 1
+= [1666051592.231713] Machine State 0x0p+0
+
+] [1666051592.231729] Number of Processes 3
+
+� [1666051592.231744] Load Factor 
+
+� [1666051592.231758] Packets per Second 5
+
+� [1666051592.231772] Discards per Second 19
+
+2 [1666051592.231786] Sleeping for 8000 msec
+0 [1666051599.896002] Machine 0 Line 2: 0,0,0.000000,0,0
+0 [1666051599.896129] Machine State: 0
+= [1666051599.896151] Machine State 0x0p+0
+
+] [1666051599.896210] Number of Processes 0
+
+� [1666051599.896246] Load Factor 
+
+� [1666051599.896282] Packets per Second 0
+
+� [1666051599.896317] Discards per Second 0
+
+0 [1666051599.896352] Sleeping for 1460 msec
+1 [1666051600.013958] Machine 1 Line 2: 0,0,0.000000,0,0
+1 [1666051600.014034] Machine State: 0
+= [1666051600.014056] Machine State 0x0p+0
+
+] [1666051600.014096] Number of Processes 0
+
+� [1666051600.014132] Load Factor 
+
+� [1666051600.014168] Packets per Second 0
+
+� [1666051600.014204] Discards per Second 0
+
+1 [1666051600.014240] Sleeping for 980 msec
+2 [1666051600.232147] Machine 2 Line 2: 0,0,0.000000,0,0
+2 [1666051600.232207] Machine State: 0
+= [1666051600.232227] Machine State 0x0p+0
+
+] [1666051600.232267] Number of Processes 0
+
+� [1666051600.232303] Load Factor 
+
+� [1666051600.232338] Packets per Second 0
+
+� [1666051600.232373] Discards per Second 0
+
+2 [1666051600.232408] Sleeping for 1280 msec
+1 [1666051600.994602] Machine 1 Line 3: 1,4,0.600000,48,10
+1 [1666051600.995658] Machine State: 1
+= [1666051600.995685] Machine State 0x0p+0
+
+] [1666051600.995725] Number of Processes 0
+
+� [1666051600.995761] Load Factor 
+
+� [1666051600.995797] Packets per Second 0
+
+� [1666051600.995833] Discards per Second 0
+
+1 [1666051600.995869] Sleeping for 1120 msec
+0 [1666051601.356642] Machine 0 Line 3: 1,1,0.200000,35,17
+0 [1666051601.356697] Machine State: 1
+= [1666051601.356717] Machine State 0x0p+0
+
+] [1666051601.356757] Number of Processes 1
+
+� [1666051601.356793] Load Factor 
+
+� [1666051601.356829] Packets per Second 35
+
+� [1666051601.356864] Discards per Second 17
+
+0 [1666051601.356900] Sleeping for 940 msec
+2 [1666051601.512586] Machine 2 Line 3: 1,6,0.700000,28,0
+2 [1666051601.512644] Machine State: 1
+= [1666051601.512665] Machine State 0x0p+0
+
+] [1666051601.512704] Number of Processes 1
+
+� [1666051601.512740] Load Factor 
+
+� [1666051601.512776] Packets per Second 35
+
+� [1666051601.512811] Discards per Second 17
+
+2 [1666051601.512849] Sleeping for 1960 msec
+1 [1666051602.116035] Machine 1 Line 4: 0,0,0.000000,0,0
+1 [1666051602.116094] Machine State: 0
+= [1666051602.116114] Machine State 0x0p+0
+
+] [1666051602.116154] Number of Processes 1
+
+� [1666051602.116190] Load Factor 
+
+� [1666051602.116226] Packets per Second 35
+
+� [1666051602.116262] Discards per Second 17
+
+1 [1666051602.116299] Sleeping for 8000 msec
+0 [1666051602.299271] Machine 0 Line 4: 1,3,0.600000,10,10
+0 [1666051602.299337] Machine State: 1
+= [1666051602.299358] Machine State 0x0p+0
+
+] [1666051602.299398] Number of Processes 3
+
+� [1666051602.299434] Load Factor 
+
+� [1666051602.299470] Packets per Second 10
+
+� [1666051602.299505] Discards per Second 10
+
+0 [1666051602.299541] Sleeping for 8000 msec
+2 [1666051603.473981] Machine 2 Line 4: 1,1,0.200000,45,13
+2 [1666051603.474053] Machine State: 1
+= [1666051603.474074] Machine State 0x0p+0
+
+] [1666051603.474113] Number of Processes 3
+
+� [1666051603.474150] Load Factor 
+
+� [1666051603.474185] Packets per Second 10
+
+� [1666051603.474221] Discards per Second 10
+
+2 [1666051603.474256] Sleeping for 8000 msec
+1 [1666051610.116923] Machine 1 Line 5: 1,5,0.400000,6,9
+1 [1666051610.117024] Machine State: 1
+= [1666051610.117046] Machine State 0x0p+0
+
+] [1666051610.117086] Number of Processes 3
+
+� [1666051610.117123] Load Factor 
+
+� [1666051610.117160] Packets per Second 10
+
+� [1666051610.117197] Discards per Second 10
+
+1 [1666051610.117234] Sleeping for 1920 msec
+0 [1666051610.301687] Machine 0 Line 5: 0,0,0.000000,0,0
+0 [1666051610.301785] Machine State: 0
+= [1666051610.301806] Machine State 0x0p+0
+
+] [1666051610.301848] Number of Processes 0
+
+� [1666051610.301909] Load Factor 
+
+� [1666051610.301945] Packets per Second 0
+
+� [1666051610.301980] Discards per Second 0
+
+0 [1666051610.302017] Sleeping for 780 msec
+2 [1666051611.474996] Machine 2 Line 5: 1,1,0.700000,2,19
+2 [1666051611.475084] Machine State: 1
+= [1666051611.475105] Machine State 0x0p+0
+
+] [1666051611.475146] Number of Processes 0
+
+� [1666051611.475184] Load Factor 
+
+� [1666051611.475220] Packets per Second 0
+
+� [1666051611.475255] Discards per Second 0
+
+2 [1666051611.475291] Sleeping for 1200 msec
