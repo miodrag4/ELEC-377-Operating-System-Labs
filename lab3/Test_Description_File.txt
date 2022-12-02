@@ -1,0 +1,4 @@
+//Testing Documentation
+//Kieran Cosgrove, Mile Stosic
+
+The process of testing the code consisted of running the code with mutiple strings. The strings were ran in Visual Studios using ./shell and then inserting the string to be tested. Once entered, the string was exported to the text1.txt file where the output could be analyzed to see if the correct output was being displayed. After running multiple strings and looking at the output it was clear to see the code was running properly and completing the correct task needed to be done. Specifically, the external and internal commands were looked at to ensure all cases worked correctly including if there were trailing spaces after the inputted string.
