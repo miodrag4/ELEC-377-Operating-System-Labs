@@ -1,0 +1,10 @@
+//Testing Approach
+
+/*The tests were performed on a student netid and using the root to see the differences in UID output.The UIDs and GIDs can be mapped to real names by the 
+files /etc/passwd and /etc/group. The output indicates that when using root, UID and GID will be assigned 0. The output also shows that when using the netid 
+20mcs, the UID should be 1007 and when using netid 19kodc it should be 1008. These outputs match the output when testing our code, therefore confirming that 
+our outputs are correct.*/  
+
+
+//Using the cat/dd command and cat//more command
+//When using the cat and dd command the Name output is changed to dd. In contrast, when using the cat and more command, the output for Name is more.

@@ -1,0 +1,12 @@
+System up(726719): 201 hrs, 51 mins, 59 seconds
+Current Process PCB Information
+Name = more
+PID = 56768
+PPID = 56245
+State = Running
+Real UID = 1007
+Effective UID = 1000
+Saved UID = 1007
+Real GID = 1000
+Effective UID = 1000
+Saved GID = 1000

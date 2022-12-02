@@ -1,0 +1,20 @@
+//Problem Statement
+
+/*The problem to address was to access information in a linux implemenation of a control block and then format the process information file. 
+Specifically, a loadable kernel module was built to add more functionality to the linux kernel. Process information subsequently needed 
+to be formatted in a /proc information file.*/
+
+//How the Parts of the Lab are Linked Together
+
+/*There is a chain from module_init to lab1_read. The initalization format is one in which specific fields are named or else they will be 
+given NULL values. The seq API is used for file access. The default seq_read, seq_lseek, and single_release are assigned to appropriate 
+fields of the structure and helps manage the files. Each function in the chain provides a reference to the next when the contacts of seq is
+called by the kernel.*/
+
+//Contents of the Read Solution
+The read function is contained in the Lab1_show. The read solution begins by initializing pointers to the structs to enable them to be printed. 
+Seq_printf statements were then used to pass the seq_file pointer *m and to print all the process control block information. Moreover, conditional if 
+statements were used for the state fields in task_struct and depending on the field, one of three values is printed.
+
+
+
