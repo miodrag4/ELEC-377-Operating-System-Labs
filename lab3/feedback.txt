@@ -1,7 +1,0 @@
-Documentation 3
-Testing 1.5
-Correctness 1
-Clarity 2
-Total: 7.5
-
-Correct test cases and results but the program is not excutable. Inproperly implemented functions. 
